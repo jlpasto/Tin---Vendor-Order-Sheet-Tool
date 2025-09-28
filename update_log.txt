@@ -1,2 +1,432 @@
 2025-09-29 01:41:51,689 - INFO - Loading files...
 2025-09-29 01:41:51,887 - INFO - Parsing 457 items with AI in batches...
+2025-09-29 01:42:32,967 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-29 01:42:32,981 - INFO - Batch 1 raw output: ```json
+[
+    {
+        "upc": "851584005499",
+        "vendor": "100 Bowls of Soup",
+        "product": "Broth, Restorative Mineral, 28oz",
+        "case_pack": "12",
+        "size": "28oz"
+    },
+    {
+        "upc": "851584005468",
+        "vendor": "100 Bowls of Soup",
+        "product": "Broth, Chicken Bone, 28oz",
+        "case_pack": "12",
+        "size": "28oz"
+    },
+    {
+        "upc": "860273001636",
+        "vendor": "1Luv Foods",
+        "product": "Hibiscus Drink, Spice Mulled, 16 fl oz",
+        "case_pack": "12",
+        "size": "16 fl oz"
+    },
+    {
+        "upc": "860273001650",
+        "vendor": "1Luv Foods",
+        "product": "Hibiscus Drink, Tropical Rush, 16 fl oz",
+        "case_pack": "12",
+        "size": "16 fl oz"
+    },
+    {
+        "upc": "860273001674",
+        "vendor": "1Luv Foods",
+        "product": "Hibiscus Drink, Ginger Burst, 16 floz",
+        "case_pack": "12",
+        "size": "16 floz"
+    },
+    {
+        "upc": "860273001698",
+        "vendor": "1Luv Foods",
+        "product": "Hibiscus Drink, Merry Berry, 16 floz",
+        "case_pack": "12",
+        "size": "16 floz"
+    },
+    {
+        "upc": "45885904807",
+        "vendor": "3 Little Pigs",
+        "product": "Egg Bite, Sous-vide with Uncured Bacon & Swiss, 2.1oz",
+        "case_pack": "6",
+        "size": "2.1oz"
+    },
+    {
+        "upc": "45885757243",
+        "vendor": "3 Little Pigs",
+        "product": "Egg Bite, Sous-vide with Spinach & Feta, 2.1oz",
+        "case_pack": "6",
+        "size": "2.1oz"
+    },
+    {
+        "upc": "45885757267",
+        "vendor": "3 Little Pigs",
+        "product": "Egg Bite, Sous-vide with Breakfast Sausage & Cheddar, 2.1oz",
+        "case_pack": "6",
+        "size": "2.1oz"
+    },
+    {
+        "upc": "45885757236",
+        "vendor": "3 Little Pigs",
+        "product": "Egg White, Sous-vide with Broccoli & Parmesan, 2.1oz",
+        "case_pack": "6",
+        "size": "2.1oz"
+    },
+    {
+        "upc": "850019656411",
+        "vendor": "A Friendly Bread",
+        "product": "Grilled Cheese, Sourdough - Extra Sharp Cheddar and Mozzarella, 5oz",
+        "case_pack": "6",
+        "size": "5oz"
+    },
+    {
+        "upc": "850019656008",
+        "vendor": "A Friendly Bread",
+        "product": "Grilled Cheese, Sourdough - Cinnamon Raisin with Brie, 5oz",
+        "case_pack": "6",
+        "size": "5oz"
+    },
+    {
+        "upc": "850019656046",
+        "vendor": "A Friendly Bread",
+        "product": "Grilled Cheese, Sourdough - Challah with Swiss, 4oz",
+        "case_pack": "6",
+        "size": "4oz"
+    },
+    {
+        "upc": "850019656268",
+        "vendor": "A Friendly Bread",
+        "product": "Grilled Cheese, Sourdough - Jalapeno with Gruyere, 5oz",
+        "case_pack": "6",
+        "size": "5oz"
+    },
+    {
+        "upc": "698264001101",
+        "vendor": "Alderfer",
+        "product": "Eggs, Large Brown, Pulp Carton - Cage Free, 1 dozen",
+        "case_pack": "15",
+        "size": "1 dozen"
+    },
+    {
+        "upc": "698264000906",
+        "vendor": "Alderfer",
+        "product": "Eggs, Large White, Pulp Carton - Cage Free, 1 dozen",
+        "case_pack": "15",
+        "size": "1 dozen"
+    },
+    {
+        "upc": "698264002207",
+        "vendor": "Alderfer",
+        "product": "Eggs, Large White, Pulp Carton - Organic, 1 dozen",
+        "case_pack": "15",
+        "size": "1 dozen"
+    },
+    {
+        "upc": "698264000401",
+        "vendor": "Alderfer",
+        "product": "Eggs, Large Brown, Pulp Carton - Organic, 1 dozen",
+        "case_pack": "15",
+        "size": "1 dozen"
+    },
+    {
+        "upc": "860002260945",
+        "vendor": "Aura Bora",
+        "product": "Cactus Rose, 12oz",
+        "case_pack": "12",
+        "size": "12oz"
+    },
+    {
+        "upc": "860002260921",
+        "vendor": "Aura Bora",
+        "product": "Lavender Cucumber, 12oz",
+        "case_pack": "12",
+        "size": "12oz"
+    },
+    {
+        "upc": "860002260938",
+        "vendor": "Aura Bora",
+        "product": "Strawberry Basil, 12oz",
+        "case_pack": "12",
+        "size": "12oz"
+    },
+    {
+        "upc": "850026937077",
+        "vendor": "Aura Bora",
+        "product": "Grapefruit Elderflower, 12oz",
+        "case_pack": "12",
+        "size": "12oz"
+    },
+    {
+        "upc": "850026937053",
+        "vendor": "Aura Bora",
+        "product": "Ginger Meyer Lemon, 12oz",
+        "case_pack": "12",
+        "size": "12oz"
+    },
+    {
+        "upc": "850026937145",
+        "vendor": "Aura Bora",
+        "product": "Lime Cardamom, 12oz",
+        "case_pack": "12",
+        "size": "12oz"
+    },
+    {
+        "upc": "850026937343",
+        "vendor": "Aura Bora",
+        "product": "Raspberry Vanilla, 12oz",
+        "case_pack": "12",
+        "size": "12oz"
+    },
+    {
+        "upc": "850026937022",
+        "vendor": "Aura Bora",
+        "product": "Lavender Cucumber, 12oz",
+        "case_pack": "24",
+        "size": "12oz"
+    },
+    {
+        "upc": "850026937039",
+        "vendor": "Aura Bora",
+        "product": "Strawberry Basil, 12oz",
+        "case_pack": "24",
+        "size": "12oz"
+    },
+    {
+        "upc": "850026937183",
+        "vendor": "Aura Bora",
+        "product": "Ginger Meyer Lemon, 12oz",
+        "case_pack": "24",
+        "size": "12oz"
+    },
+    {
+        "upc": "850026937169",
+        "vendor": "Aura Bora",
+        "product": "Grapefruit Elderflower, 12oz",
+        "case_pack": "24",
+        "size": "12oz"
+    },
+    {
+        "upc": "850026937350",
+        "vendor": "Aura Bora",
+        "product": "Lime Cardamom, 12oz",
+        "case_pack": "24",
+        "size": "12oz"
+    }
+]
+```
+2025-09-29 01:43:08,325 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-09-29 01:43:08,327 - INFO - Batch 2 raw output: ```json
+[
+    {
+        "upc": "850026937404",
+        "vendor": "Aura Bora",
+        "product": "Raspberry Vanilla",
+        "case_pack": "4",
+        "size": "6 x 12oz"
+    },
+    {
+        "upc": "850026937510",
+        "vendor": "Aura Bora",
+        "product": "Olive Oil Martini made with Graza Extra Virgin Olive Oil, 4-can Multipack",
+        "case_pack": "6",
+        "size": "48floz"
+    },
+    {
+        "upc": "850000827004",
+        "vendor": "Ayoba-Yo",
+        "product": "Traditional Biltong Beef Jerky",
+        "case_pack": "8",
+        "size": "2 oz"
+    },
+    {
+        "upc": "850000827028",
+        "vendor": "Ayoba-Yo",
+        "product": "Droewors Beef Sticks",
+        "case_pack": "8",
+        "size": "2 oz"
+    },
+    {
+        "upc": "850000827011",
+        "vendor": "Ayoba-Yo",
+        "product": "Spicy Biltong Beef Jerky",
+        "case_pack": "8",
+        "size": "2 oz"
+    },
+    {
+        "upc": "850000827172",
+        "vendor": "Ayoba",
+        "product": "Traditional 100% Grass Fed Droewors Stick",
+        "case_pack": "12",
+        "size": "1 oz"
+    },
+    {
+        "upc": "855954007267",
+        "vendor": "Billy Pie",
+        "product": "Cheese Pizza",
+        "case_pack": "12",
+        "size": "11.84oz"
+    },
+    {
+        "upc": "855954007274",
+        "vendor": "Billy Pie",
+        "product": "Margherita Pizza",
+        "case_pack": "12",
+        "size": "11.84oz"
+    },
+    {
+        "upc": "855954007281",
+        "vendor": "Billy Pie",
+        "product": "White Pizza",
+        "case_pack": "12",
+        "size": "11.84oz"
+    },
+    {
+        "upc": "855954007298",
+        "vendor": "Billy Pie",
+        "product": "Mushroom Ricotta Pizza",
+        "case_pack": "12",
+        "size": "19.50oz"
+    },
+    {
+        "upc": "860005613595",
+        "vendor": "Bitchin' Boucha",
+        "product": "Grape Sour Kombucha",
+        "case_pack": "12",
+        "size": "12floz"
+    },
+    {
+        "upc": "860005613540",
+        "vendor": "Bitchin' Boucha",
+        "product": "Mango Ginger Kombucha",
+        "case_pack": "12",
+        "size": "12floz"
+    },
+    {
+        "upc": "860005613588",
+        "vendor": "Bitchin' Boucha",
+        "product": "Blood Orange Basil Kombucha",
+        "case_pack": "12",
+        "size": "12floz"
+    },
+    {
+        "upc": "860005613557",
+        "vendor": "Bitchin' Boucha",
+        "product": "Peach Black Tea Kombucha",
+        "case_pack": "12",
+        "size": "12floz"
+    },
+    {
+        "upc": "860005613519",
+        "vendor": "Bitchin' Boucha",
+        "product": "Lavender Lemonade Kombucha",
+        "case_pack": "12",
+        "size": "12floz"
+    },
+    {
+        "upc": "653341011046",
+        "vendor": "Blue Ridge Bucha",
+        "product": "Original Ginger Org Keg",
+        "case_pack": "1",
+        "size": "660oz"
+    },
+    {
+        "upc": "653341011145",
+        "vendor": "Blue Ridge Bucha",
+        "product": "Elderflower Sunrise Org Keg",
+        "case_pack": "1",
+        "size": "660oz"
+    },
+    {
+        "upc": "653341011244",
+        "vendor": "Blue Ridge Bucha",
+        "product": "KombuCHAI- Seasonal Flavor - Keg",
+        "case_pack": "1",
+        "size": "660oz"
+    },
+    {
+        "upc": "748252409935",
+        "vendor": "Blue Ridge Bucha",
+        "product": "Bluegrass Bucha Org Keg",
+        "case_pack": "1",
+        "size": "660oz"
+    },
+    {
+        "upc": "748252410238",
+        "vendor": "Blue Ridge Bucha",
+        "product": "Black Raspberry Org Keg",
+        "case_pack": "1",
+        "size": "660oz"
+    },
+    {
+        "upc": "850027076270",
+        "vendor": "Blue Ridge Bucha",
+        "product": "Jasmine Grape Organic Keg",
+        "case_pack": "1",
+        "size": "660oz"
+    },
+    {
+        "upc": "850027076287",
+        "vendor": "Blue Ridge Bucha",
+        "product": "Wild Pear Organic Keg",
+        "case_pack": "1",
+        "size": "660oz"
+    },
+    {
+        "upc": "748252410030",
+        "vendor": "Blue Ridge Bucha",
+        "product": "64oz Screen Printed Growlers (6 pack)",
+        "case_pack": "6",
+        "size": "64oz"
+    },
+    {
+        "upc": "850027076003",
+        "vendor": "Blue Ridge Bucha",
+        "product": "Original Ginger Org",
+        "case_pack": "12",
+        "size": "12oz"
+    },
+    {
+        "upc": "850027076010",
+        "vendor": "Blue Ridge Bucha",
+        "product": "Elderflower Sunrise Org",
+        "case_pack": "12",
+        "size": "12oz"
+    },
+    {
+        "upc": "850027076027",
+        "vendor": "Blue Ridge Bucha",
+        "product": "Bluegrass Bucha Org",
+        "case_pack": "12",
+        "size": "12oz"
+    },
+    {
+        "upc": "850027076034",
+        "vendor": "Blue Ridge Bucha",
+        "product": "Black Raspberry Org",
+        "case_pack": "12",
+        "size": "12oz"
+    },
+    {
+        "upc": "850027076041",
+        "vendor": "Blue Ridge Bucha",
+        "product": "Jasmine Grape Org",
+        "case_pack": "12",
+        "size": "12oz"
+    },
+    {
+        "upc": "850027076058",
+        "vendor": "Blue Ridge Bucha",
+        "product": "Wild Pear Org",
+        "case_pack": "12",
+        "size": "12oz"
+    },
+    {
+        "upc": "850027076317",
+        "vendor": "Blue Ridge Bucha",
+        "product": "Hoppin' Orange",
+        "case_pack": "12",
+        "size": "12oz"
+    }
+]
+```
