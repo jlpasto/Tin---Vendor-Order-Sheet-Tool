@@ -139,14 +139,12 @@ def parse_item_descriptions_batch(items, batch_size=30, retries=2):
         Your task: Extract the following from the given product description:
         - upc: copy from the input exactly
         - vendor (brand/manufacturer)
-        - product (unique product name without case pack but including differentiating attributes like unit type if necessary)
-        - case_pack (numeric quantity before 'x')
-        - size (unit after 'x' add spacing, e.g., "1 dozen", "500 ml", etc.)
+        - product (unique product name without case pack and size)
 
         Guidelines:
         1. If any field is missing, return null for that field.
         2. The "product" field must be unique — if multiple products share the same name but differ in attributes like size or pack unit (e.g., carton vs. tray), include those attributes in the product name.
-        3. Do NOT include case pack quantity or size in the product name unless needed to differentiate products.
+        3. Do NOT include case pack quantity or size in the product name unless needed to differentiate exactly same product name.
         4. Output ONLY valid JSON, with keys: vendor, product, case_pack, size. Exclude any text outside the JSON. (e.g. ```json)
 
         ### Example
@@ -164,30 +162,22 @@ def parse_item_descriptions_batch(items, batch_size=30, retries=2):
         {{  
             "upc": 698264001101,
             "vendor": "Alderfer",
-            "product": "Eggs, Large Brown, Pulp Carton - Cage Free",
-            "case_pack": "15",
-            "size": "1 dozen"
+            "product": "Eggs, Large Brown, Pulp Carton - Cage Free"
         }},
         {{
             "upc": 698264000906,
             "vendor": "Alderfer",
-            "product": "Eggs, Large White, Pulp Carton - Cage Free",
-            "case_pack": "15",
-            "size": "1 dozen"
+            "product": "Eggs, Large White, Pulp Carton - Cage Free"
         }},
         {{
             "upc": 698264002207,
             "vendor": "Alderfer",
-            "product": "Eggs, Large White, Pulp Carton - Organic",
-            "case_pack": "15",
-            "size": "1 dozen"
+            "product": "Eggs, Large White, Pulp Carton - Organic"
         }},
         {{
             "upc": 698264000401,
             "vendor": "Alderfer",
-            "product": "Eggs, Large Brown, Pulp Carton - Organic",
-            "case_pack": "15",
-            "size": "1 dozen"
+            "product": "Eggs, Large Brown, Pulp Carton - Organic"
         }}
         ]
 
@@ -217,9 +207,7 @@ def parse_item_descriptions_batch(items, batch_size=30, retries=2):
                     if upc:
                         all_results[upc] = {
                             "vendor": result.get("vendor"),
-                            "product": result.get("product"),
-                            "case_pack": result.get("case_pack"),
-                            "size": result.get("size"),
+                            "product": result.get("product")
                         }
                 break  # success, break retry loop
             except Exception as e:
@@ -362,9 +350,9 @@ def update_client_sheet():
                 ws[f"D{max_row}"] = data["size"]
                 ws[f"E{max_row}"] = data["case_pack"]
                 ws[f"F{max_row}"] = upc
-                ws[f"G{max_row}"] = data["wholesale_case_price"]
-                ws[f"H{max_row}"] = data["wholesale_unit_price"]
-                ws[f"I{max_row}"] = data["retail_price"]
+                ws[f"G{max_row}"] = f"{round_2_decimals((data["wholesale_case_price"])):.2f}"
+                ws[f"H{max_row}"] = f"{round_2_decimals((data["wholesale_unit_price"])):.2f}" 
+                ws[f"I{max_row}"] = f"{round_2_decimals((data["retail_price"])):.2f}"  
                 ws[f"N{max_row}"] = "ADDED"
                 for col in "BCDEFGHI":
                     ws[f"{col}{max_row}"].fill = green_fill
