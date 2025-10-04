@@ -1,1 +1,4 @@
 First Step: Clean the Master product , only include the vendor present in Client Sheet
+To DO:
+Normalize (capitalize) product name final output
+Case pack is always green 

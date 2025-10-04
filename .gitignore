@@ -1,2 +1,8 @@
 .env
 venv/
+
+#ignore excel files
+*.xlsx
+*.xls
+*.txt
+*.csv
